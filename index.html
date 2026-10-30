@@ -27,63 +27,118 @@
 </head>
 <body>
 <h1>Violearn</h1>
-<p class="updated">Privacy Policy — last updated August 10, 2026</p>
+<p class="updated">Privacy Policy — last updated October 30, 2026</p>
 
-<p>Violearn ("the app") is an independently developed app ("we", "the developer"). This policy explains what
-information the app handles and how.</p>
+<p>Violearn ("the app") is an independently developed app ("we", "the developer"). This policy explains what information
+the app handles and how.</p>
 
 <h2>Information we collect</h2>
-<p><strong>We never ask for your name, email address or any other identifying
-detail.</strong> Violearn has no accounts and no sign-in, and we operate no servers of our
-own. Your practice history — scores, streaks, per-note accuracy, lesson progress, practice
-sessions and your instrument calibration — is stored only on your device and is never
-transmitted to us. We do use Google services for analytics, crash reporting and
-advertising, described below.</p>
+
+<p><strong>Violearn has no accounts, no sign-in, and no servers of our own.</strong> Your practice history
+(scores, streaks, per-note accuracy, lesson progress) is stored only on your device and is
+never transmitted.</p>
+
+<p>We do use two third-party services that collect limited data on our behalf: Google AdMob
+for advertising, and Google Firebase for anonymous usage statistics and crash reports. If you
+ask the app to read the notes from a photo of sheet music, the photo is processed by Google too
+(see "Music you add").
+Both are described below.</p>
 
 <h2>Microphone</h2>
-<p>The Tuner feature uses your device's microphone to detect the pitch of the note you are
-playing. Audio is analyzed in real time on your device only. It is never recorded, stored,
-or transmitted anywhere.</p>
+
+<p>The Tuner, Play mode, and instrument calibration use your device's microphone to detect the
+pitch of the note you are playing. Audio is analyzed in real time on your device only. It is
+never recorded, stored, or transmitted anywhere. The microphone is active only while one of
+those features is actually running.</p>
+
+<h2>Music you add</h2>
+
+<p>You can add your own music: a MusicXML file you choose, or photographs of printed pages. <strong>Both are
+stored only on your device, inside the app's own storage.</strong> When you add a photo, the app receives
+only the pictures you pick; it has no access to the rest of your photo library and never asks for
+it. If you scan pages with the camera, the camera is used only while you are scanning, and the
+scanned pages are stored the same way: on your device only. Deleting a piece in the app, or
+deleting the app, deletes them.</p>
+
+<p><strong>Reading the notes from a photo.</strong> If you ask Violearn to read the notes from a photo of sheet
+music, that is the one time anything you added leaves your device. The app finds each line of music
+on the page itself, then sends a picture of each line to Google's Gemini model, through Google
+Firebase AI Logic, to locate the notes. Only those pictures are sent, only when you tap Read, and
+with nothing that identifies you. We don't receive or keep them; Google processes them under its
+<a href="https://cloud.google.com/terms">Google Cloud terms</a> and the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>. To stop anyone other than the app
+using this service, Firebase App Check confirms each request comes from a genuine copy of Violearn,
+using Apple's App Attest; this involves no personal data. The notes that come back are stored on
+your device like any other piece.</p>
 
 <h2>Advertising</h2>
-<p>Violearn shows banner ads served by Google AdMob. We show <strong>non-personalized
-ads</strong> and do not use Apple's App Tracking Transparency framework to track you across
-apps. To serve and measure ads and to prevent fraud, Google may collect certain data from
-your device, such as a device identifier, coarse general location derived from IP address,
-and ad interaction data (e.g., which ads were shown). This data is not linked to your
-identity by us.</p>
-<p>For details on how Google uses this data, see
-<a href="https://policies.google.com/technologies/partner-sites">How Google uses information
-from sites or apps that use our services</a> and the
-<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-<h2>Diagnostics</h2>
-<p>Violearn uses <strong>Google Firebase Crashlytics</strong> to report crashes and
-<strong>Google Firebase Analytics</strong> to understand which parts of the app get used.
-These report events such as starting a practice session, opening the tuner or completing a
-lesson, along with technical information about your device and app version. They never
-receive your name or contact details, and they never receive audio.</p>
-<p>Analytics is enabled only in copies downloaded from the App Store; builds used for
-testing report nothing. Crash reports are collected in all versions.</p>
-<p>Aggregated, anonymous crash and performance data may also be collected by the Google
-Mobile Ads SDK to keep the app and ads functioning correctly.</p>
+<p>Violearn shows ads served by Google AdMob: a banner on the Tuner, an occasional full-screen ad
+between sessions, and video ads you can choose to watch for a reward.</p>
+
+<p><strong>The app never asks for permission to track you</strong> (Apple's App Tracking Transparency), so your
+device's advertising identifier is not available to Google through Violearn. To choose, serve and
+measure ads and to prevent fraud, Google may still collect certain data from your device, such as
+a device identifier, a coarse general location derived from your IP address, and ad interaction
+data (for example, which ads were shown). Ads may be chosen using general information like this
+and the app they appear in. This data is not linked to your identity by us.</p>
+
+<p>For details on how Google uses this data, see
+<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>
+and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>Usage statistics and crash reports</h2>
+
+<p>Violearn uses <strong>Google Firebase Analytics</strong> and <strong>Google Firebase Crashlytics</strong>.</p>
+
+<p><strong>Analytics</strong> records anonymous, aggregated events about how the app is used — for example
+that a lesson was started or finished, that a Play session ran, or that the tuner was
+opened — so we can tell which parts of the app are useful. It does not record what you
+played, any audio, or anything you typed. Firebase assigns a random app-instance
+identifier and collects standard technical details such as device model, operating system
+version, and a coarse general location derived from IP address. This is not linked to any
+identity, because the app has none to link it to.</p>
+
+<p>Analytics is collected <strong>only from copies of the app installed from the App Store</strong>. Beta
+(TestFlight) and development builds do not report usage at all.</p>
+
+<p><strong>Crashlytics</strong> records crash and error diagnostics — the stack trace and device state at
+the moment something went wrong — so faults can be found and fixed. This runs in all
+builds, including beta ones. It contains no practice data and no personal information.</p>
+
+<p>For details on how Google handles this data, see the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a> and
+<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>.</p>
 
 <h2>Subscriptions and purchases</h2>
-<p>Violearn offers an optional paid subscription. Purchases are handled entirely by Apple:
-<strong>we never see or receive your payment details.</strong> We are told only whether an
-active subscription exists on your device, which is what unlocks the paid features.
-Billing, refunds and cancellation are managed through your Apple Account.</p>
+
+<p>Violearn offers an optional paid subscription, Violearn Pro. Purchases are handled entirely by
+Apple: <strong>we never see or receive your payment details.</strong> The app is told only whether an active
+subscription exists on your device, which is what unlocks Pro. Billing, refunds and cancellation
+are managed through your Apple Account.</p>
+
+<h2>Feedback you send us</h2>
+
+<p>The app has a <strong>Send feedback</strong> option. It opens your own email app with a message addressed to
+us and prefilled with the app version, the device model and the iOS version, all of which you can
+edit or delete before sending. <strong>Nothing is sent unless you send it.</strong> If you do, we receive your
+email address and what you wrote, and use them only to read your message and reply. We don't add
+you to any mailing list or share your message with anyone.</p>
 
 <h2>Children</h2>
-<p>Violearn does not knowingly collect personal information from anyone, including
-children. Ads are always served in non-personalized mode.</p>
+
+<p>Violearn does not knowingly collect personal information from anyone, including children.
+The app never asks to track anyone, and the usage statistics described above are anonymous.</p>
 
 <h2>Data deletion</h2>
-<p>All app data — practice history, settings and your instrument calibration — lives on
-your device. Deleting the app deletes all of it. Analytics and crash data held by Google
-can be requested for deletion by contacting us at the address below.</p>
+
+<p>All practice data (history, progress and settings) lives on your device. Deleting the app
+deletes all of it. To stop anonymous usage and crash reporting, delete the app; there is
+no separate account or record held about you to erase. If you've emailed us, ask and we'll
+delete the conversation.</p>
 
 <h2>Changes to this policy</h2>
+
 <p>If this policy changes, the updated version will be posted at this address with a new
 "last updated" date.</p>
 
